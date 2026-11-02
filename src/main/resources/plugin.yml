@@ -1,0 +1,42 @@
+name: StormHome
+version: '1.0'
+main: pl.stormhome.Main
+api-version: '1.21'
+description: Home, kosz, ec i repairall dla wszystkich.
+
+commands:
+  home:
+    description: Otwiera menu domkow.
+    usage: /home [numer]
+    aliases: [domek, domki]
+  kosz:
+    description: Otwiera kosz (itemy znikaja po zamknieciu).
+    usage: /kosz
+    aliases: [trash]
+  ec:
+    description: Otwiera enderchest.
+    usage: /ec
+    aliases: [enderchest]
+  repairall:
+    description: Naprawia caly ekwipunek i zbroje.
+    usage: /repairall
+    aliases: [naprawall]
+
+permissions:
+  stormhome.home:
+    default: true
+  stormhome.kosz:
+    default: true
+  stormhome.ec:
+    default: true
+  stormhome.repairall:
+    default: true
+  stormhome.vip:
+    description: 3 domki
+    default: false
+  stormhome.svip:
+    description: 5 domkow
+    default: false
+  stormhome.gvip:
+    description: 7 domkow
+    default: false
